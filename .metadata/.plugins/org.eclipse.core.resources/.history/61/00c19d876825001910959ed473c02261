@@ -1,0 +1,22 @@
+package com.example.calculator;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class SimpleOperationsTest {
+
+	private static SimpleCalculator calc = new Ti84();
+	
+	@Test
+	public void testSimplePositiveAddition() {
+		int result = calc.add(4, 2);
+		assertEquals(6, result);
+	}
+	
+	@Test
+	public void testSimplePositiveAdditionFloatingPoint() {
+		double result = calc.add(4.5, 2.3);
+		assertEquals(6.8, result);
+	}
+}

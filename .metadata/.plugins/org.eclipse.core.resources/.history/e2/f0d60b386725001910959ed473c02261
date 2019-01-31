@@ -1,0 +1,14 @@
+package com.example.calculator;
+
+import org.junit.Test;
+
+public class SimpleOperationsTest {
+
+	private static SimpleCalculator calc = new Ti84();
+	
+	@Test
+	public void testSimplePositiveAddition() {
+		
+	}
+
+}

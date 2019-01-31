@@ -1,0 +1,16 @@
+package com.example.calculator;
+
+public class Ti84 implements SimpleCalculator {
+
+	@Override
+	public int add(int i, int j) {
+		return i + j;
+	}
+
+	@Override
+	public int subtract(int i, int j) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

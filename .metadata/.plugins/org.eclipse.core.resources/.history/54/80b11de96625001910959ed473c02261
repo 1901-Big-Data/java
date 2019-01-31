@@ -1,0 +1,14 @@
+package com.example.calculator;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SimpleOperations {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
