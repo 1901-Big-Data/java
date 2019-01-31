@@ -121,4 +121,9 @@ public class Cat extends Animal implements Serializable {
 		return "Cat [name=" + name + ", breed=" + breed + ", owner=" + owner + ", gender=" + gender + ", weight="
 				+ weight + "]";
 	}
+
+	@Override
+	void performTask(Interact action) {
+		action.action(this);
+	}
 }

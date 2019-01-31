@@ -16,6 +16,23 @@ public class Application {
 		Cat c1 = new Cat("Garfield", "Tabby", "John", "MALE", 50.0);
 		Cat c2 = new Cat("Dot", "Tabby", "World", "FEMALE", 10.0);
 		
+		d1.performTask((Interact)(Animal a) -> {
+			try {				
+				if (a instanceof Dog) {
+					System.out.println("Walking " + ((Dog) a).getName());
+				} else {
+					System.out.println("Walking " + ((Cat) a).getName());
+				}
+			} catch (ClassCastException e) {
+				throw new IllegalArgumentException();
+			}				if (a instanceof Dog) {
+				System.out.println("Walking " + ((Dog) a).getName());
+			} else {
+				System.out.println("Walking " + ((Cat) a).getName());
+			}
+
+		});
+		
 		ArrayList<Animal> list = new ArrayList<Animal>();
 		list.add(d1);
 		list.add(d2);

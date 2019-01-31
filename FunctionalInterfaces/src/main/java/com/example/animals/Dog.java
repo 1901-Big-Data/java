@@ -121,4 +121,9 @@ public class Dog extends Animal implements Serializable {
 			return false;
 		return true;
 	}
+
+	@Override
+	void performTask(Interact action) {
+			action.action(this);
+	}
 }
